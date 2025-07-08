@@ -15,7 +15,13 @@ const ViewAppointments = async ({ params }: { params: { userId: string } }) => {
       <h1 className="text-center text-3xl font-bold">Your Scheduled Appointments</h1>
 
       {appointments?.length === 0 ? (
-        <p className="text-center text-gray-500">No scheduled appointments found.</p>
+        <> 
+          <h2 className="header mb-6 max-w-[600px] text-center">
+            Your <span className="text-green-500">appointment request</span> has
+            been successfully submitted!
+          </h2>
+          <p>We&apos;ll be in touch shortly to confirm.</p>
+        </>
       ) : (
         <ul className="space-y-6">
           {appointments.map((appt: any) => (

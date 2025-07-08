@@ -1,5 +1,0 @@
-# Allow static assets
-/assets/*  /assets/:splat  200
-
-# Fallback to index.html for SPA routing
-/*  /index.html  200
